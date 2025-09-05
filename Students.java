@@ -14,7 +14,7 @@ public final class Student {
         this.cgpa = cgpa;
     }
 
-    // Getters (Encapsulation)
+    // Getters
     public long getId() {
         return id;
     }
@@ -31,7 +31,7 @@ public final class Student {
         return cgpa;
     }
 
-    // Print function (no parameters)
+    // Print function
     public void printInfo() {
         System.out.println("ID: " + id);
         System.out.println("Name: " + fullName);
@@ -40,7 +40,7 @@ public final class Student {
         System.out.println("----------------------");
     }
 
-    // Function to check matching criteria (inside class)
+    // Function to check matching criteria
     public boolean matchesQuery(String query) {
         String[] parts = fullName.split(" ");
         String lastName = parts[parts.length - 1];
